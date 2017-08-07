@@ -207,7 +207,7 @@ ad_VolCons(north) ==  F                            ! northern boundary
 ! Input/Output parameters.
 
        NRREC == IRESTART
-   LcycleRST == F
+   LcycleRST == T
         NRST == RSTSTEP
         NSTA == STASTEP
         NFLT == 299970
@@ -492,8 +492,8 @@ Hout(idu3dE) == T       ! u_eastward         3D U-eastward  at RHO-points
 Hout(idv3dN) == T       ! v_northward        3D V-northward at RHO-points
 Hout(idWvel) == F       ! w                  3D W-velocity
 Hout(idOvel) == F       ! omega              omega vertical velocity
-Hout(idUbar) == F       ! ubar               2D U-velocity
-Hout(idVbar) == F       ! vbar               2D V-velocity
+Hout(idUbar) == T       ! ubar               2D U-velocity
+Hout(idVbar) == T       ! vbar               2D V-velocity
 Hout(idu2dE) == F       ! ubar_eastward      2D U-eastward  at RHO-points
 Hout(idv2dN) == F       ! vbar_northward     2D V-northward at RHO-points
 Hout(idFsur) == T       ! zeta               free-surface
@@ -562,12 +562,12 @@ Hout(idEmPf) == F       ! EminusP            E-P flux
 Hout(idevap) == F       ! evaporation        evaporation rate
 Hout(idrain) == F       ! rain               precipitation rate
 
-Hout(idDano) == F       ! rho                density anomaly
-Hout(idVvis) == F       ! AKv                vertical viscosity
-Hout(idTdif) == F       ! AKt                vertical T-diffusion
-Hout(idSdif) == F       ! AKs                vertical Salinity diffusion
-Hout(idHsbl) == F       ! Hsbl               depth of surface boundary layer
-Hout(idHbbl) == F       ! Hbbl               depth of bottom boundary layer
+Hout(idDano) == T       ! rho                density anomaly
+Hout(idVvis) == T       ! AKv                vertical viscosity
+Hout(idTdif) == T       ! AKt                vertical T-diffusion
+Hout(idSdif) == T       ! AKs                vertical Salinity diffusion
+Hout(idHsbl) == T       ! Hsbl               depth of surface boundary layer
+Hout(idHbbl) == T       ! Hbbl               depth of bottom boundary layer
 Hout(idMtke) == F       ! tke                turbulent kinetic energy
 Hout(idMtls) == F       ! gls                turbulent length scale
 
@@ -591,8 +591,8 @@ Qout(idu3dE) == F       ! u_eastward         3D U-eastward  at RHO-points
 Qout(idv3dN) == F       ! v_northward        3D V-northward at RHO-points
 Qout(idWvel) == F       ! w                  3D W-velocity
 Qout(idOvel) == F       ! omega              omega vertical velocity
-Qout(idUbar) == F       ! ubar               2D U-velocity
-Qout(idVbar) == F       ! vbar               2D V-velocity
+Qout(idUbar) == T       ! ubar               2D U-velocity
+Qout(idVbar) == T       ! vbar               2D V-velocity
 Qout(idu2dE) == F       ! ubar_eastward      2D U-eastward  at RHO-points
 Qout(idv2dN) == F       ! vbar_northward     2D V-northward at RHO-points
 Qout(idFsur) == F       ! zeta               free-surface

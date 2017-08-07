@@ -18,7 +18,7 @@
   , pointer_file   = '<cicedir>/rundir/restart/ice.restart_file'
   , dumpfreq       = 'd'
   , dumpfreq_n     = 30
-  , dump_last      = .false.
+  , dump_last      = .true.
   , bfbflag        = .false.
   , diagfreq       = 24
   , diag_type      = 'stdout'
@@ -156,7 +156,7 @@
   , ycycle          = 100
   , atm_data_format = 'nc'
   , atm_data_type   = 'metroms'
-  , atm_data_dir    = './atmcice/'
+  , atm_data_dir    = '/global/work/sfr009/Arctic-20km/ERA/'
   , calc_strair     = .true.
   , highfreq        = .false.
   , natmiter        = 5

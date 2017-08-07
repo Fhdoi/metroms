@@ -72,7 +72,7 @@ fi
 export USE_OpenMP=
 export USE_LARGE=on
 
-export USE_DEBUG=
+export USE_DEBUG=on
 
 export USE_NETCDF4=on
 
@@ -105,7 +105,7 @@ tmpdir=tmproms
 export MY_ROMS_SRC=${tup}/${tmpdir}/roms_src
 mkdir -p ${MY_ROMS_SRC}
 cd ${MY_ROMS_SRC}
-tar -xf ${metroms_base}/static_libs/${roms_ver}.tar.gz
+#tar -xf ${metroms_base}/static_libs/${roms_ver}.tar.gz
 
 # JD : Added temporary to have place for a new file
 touch $MY_ROMS_SRC/ROMS/Nonlinear/frazil_ice_prod_mod.F
@@ -296,7 +296,7 @@ if [ -n "${USE_CICE:+1}" ]; then
   CICE_INCDIR := ${tup}/${tmpdir}/run/${ROMS_APPLICATION}/cice/rundir/compile
   CICE_LIBDIR := ${tup}/${tmpdir}/run/${ROMS_APPLICATION}/cice/rundir/compile
       FFLAGS += -I$(CICE_INCDIR)
-        LIBS += -L$(CICE_LIBDIR) -lcice
+        LIBS += -L$(CICE_LIBDIR) -lcice -lfftw3
 fi
 
 if [ -n "${USE_NETCDF4:+1}" ]; then

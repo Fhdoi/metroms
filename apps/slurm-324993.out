@@ -1,0 +1,9 @@
++ '[' 0 -lt 1 ']'
++ echo 'Usage: /var/spool/slurmd/job324993/slurm_script modelname -j 4'
+Usage: /var/spool/slurmd/job324993/slurm_script modelname -j 4
++ echo 'Or specify more kernels than 4 for compilation if you have them available'
+Or specify more kernels than 4 for compilation if you have them available
++ exit
+Error: According to the accounting, there are not enough
+unused and unreserved hours left in project uit-phys-014
+to start job 324993, which requires 2.0 PE hours.

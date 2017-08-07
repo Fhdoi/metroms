@@ -96,10 +96,10 @@ class Params(object):
             ['NUDGZONEWIDTH',"10"],
             ['GRDFILE',GlobalParams.COMMONPATH+"/grid/A20_grd_openBering.nc"],
             ['RUNDIR',self.RUNPATH],
-            ['_CLMNAME_',self.OCNFORCPATH+"/ocean_2009_clm.nc | \n"+self.OCNFORCPATH+"/ocean_2010_clm.nc"],
-            ['_BRYNAME_',self.OCNFORCPATH+"/ocean_2009_bry.nc | \n"+self.OCNFORCPATH+"/ocean_2010_bry.nc"],
+            ['_CLMNAME_',self.OCNFORCPATH+"/ocean_2010_clm.nc"],
+            ['_BRYNAME_',self.OCNFORCPATH+"/ocean_2010_bry.nc"],
             ['TIDEDIR',self.OCNFORCPATH],
-            ['ATMDIR',self.ATMFORCPATH+"/AN_2009_unlim.nc | \n"+self.ATMFORCPATH+"/AN_2010_unlim.nc \ \n"+self.ATMFORCPATH+"/FC_2009_unlim.nc | \n"+self.ATMFORCPATH+"/FC_2010_unlim.nc"],
+            ['ATMDIR',self.ATMFORCPATH+"/AN_2010_unlim.nc \ \n"+self.ATMFORCPATH+"/FC_2010_unlim.nc"],
             ['RIVERFILE',GlobalParams.COMMONPATH+"/rivers/newA20_rivers_mitya.nc"],
             ['FORCEFILES',"3"], # The files should be specified here as well
             #['ROMS/External/coupling.dat', self.RUNPATH + "/coupling.dat"],
