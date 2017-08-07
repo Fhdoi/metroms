@@ -1,0 +1,8 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) gold/2.1.5.0   2) StdEnv
+  File "Ensemble_arctic20km.py", line 106
+    copyfile(ice_f lder+'ice.restart_file_org', ice_folder+'ice.restart_file')
+                      ^
+SyntaxError: invalid syntax
