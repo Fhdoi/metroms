@@ -1,0 +1,18 @@
+&setup_nml
+	test			= 10,
+	nx			= 322, 
+	ny			= 242,
+	nz			= 5,
+	Ice_data 		= 'SMOS',
+	Assim_TH 		= 0,
+	Assim_CO 		= 1,
+	Obs_par			= 2,
+	N			= 10,
+	n_var			= 229,
+	loc_rad			= 5,
+	default_error 		= 0.1,
+	Rundir			= 'Coupled_Results/Coupled_Pert',
+	Global_dir		= '/global/work/sfr009/',
+	Home_dir		= '/home/sfr009/Results/Assim/'
+	date_start		= 80		
+/
